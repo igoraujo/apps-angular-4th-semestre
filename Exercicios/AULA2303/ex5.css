@@ -1,0 +1,47 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(1fr));	
+    grid-template-rows: 3fr;    
+	grid-auto-flow: dense;
+    grid-template-areas: 
+        "m h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.header {
+	grid-area: h
+}
+
+.menu {
+	grid-area: m;   
+}
+
+.content {
+	grid-area: c;
+}
+
+.footer {
+	grid-area: f;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}

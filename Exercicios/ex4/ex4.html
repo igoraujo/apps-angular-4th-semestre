@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Faber Henrique Xavier">
+    <title>Matching Game</title>
+    <style>
+        img{ position: absolute;}
+        div{ position: absolute; weigth: 500px; height: 500px;}
+        #rightSide{ left: 500px; border-left: 1px solid black;}
+    </style>
+</head>
+	<body onload="generateFaces()">
+		<h1>Jogo de Atenção</h1>
+		<p>Clique na face a mais no lado esquerdo</p>
+		<div id="leftSide"></div>
+		<div id="rightSide"></div>		
+		<div>
+			<b><label id="score">SCORE: </label></b>
+			<b><label id="lbl">0</label></b>
+		</div>
+		
+		<script type="text/javascript" src="ex4.js"></script>
+	</body>
+</html>
