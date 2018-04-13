@@ -1,11 +1,29 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Título da Página</title>
+		<style>
+			.class{
+				background-color: #FFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="divId" class=".class"></div>
+	</body>
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML = "Paragraph changed!";
+		}
+</script>
+</html>
 	
 	
 <!DOCTYPE html>
 <html>
 <body>
 
-<div id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</div>
+<p id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
 
 <script>
 function myFunction() {
