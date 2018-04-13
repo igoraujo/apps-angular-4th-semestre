@@ -2,11 +2,21 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script>
+		function click() {	
+		
+			document.getElementById("image1").src = "http://localhost:3000/pokemon/kakuna";
+			console.log('asdasd');
+		}
+	</script>
 </head>
 <body>
 <div>
 	<img class="image1" src="https://img.pokemondb.net/artwork/arcanine.jpg" />
   <img class="image2" src="pokedex1.gif" />
+	<div>
+		<button onclick="click()" >change</button>
+	</div>
 </div>
 </body>
 </html>

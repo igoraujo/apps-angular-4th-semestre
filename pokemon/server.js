@@ -11,18 +11,22 @@ var app = express();
 var pokemons = [];
 //INICIALIZANDO MODULO DE LEITURA DE ARQUIVO
 
-app.get("/pokemon/:id", function(req,res) {
+app.get("/pokemon/:name", function(req,res) {
    fs.readFile("./evolucao.json", "utf8", function (err, data) {
       //Transformando os dados lidos em um objeto JSON
       
       pokemons = JSON.parse(data);
+	  	  
         
       var poke = pokemons.filter(function(poke) {
-        return (poke.Name === req.params.id);
+        return (poke.Name === req.params.name);
       });       
       
+	  
+		console.log(poke[0].Image))
+	  
       res.setHeader('Access-Control-Allow-Origin','*');
-      res.end( JSON.stringify(poke));
+      res.end( JSON.stringify(poke[0].Image));
    });
 });
 

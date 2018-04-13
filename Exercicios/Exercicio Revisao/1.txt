@@ -1,0 +1,38 @@
+HTML:
+1. Liste 5 principais Tags do HTML 5
+	<html> </html>
+	<head> </head>
+	<style> </style>
+	<script> </script>
+	<body> </body>
+
+
+2. Escolha 3 Tags do exercício anterior e explique sua escolha, seu funcionamento e sua
+importância.
+
+<html> Envolve todo o documeto html </html>
+<head> Envolve o cabeçalho de um documento html </head>
+<body> Envolve todo o corpo(textos e tags) do documento html </body>
+
+3. Apresente um esboço de código onde as 5 Tags são utilizadas de maneira correta.
+ 
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Título da Página</title>
+			<style>
+				.class{
+					background-color: #FFF;
+				}
+			</style>
+			<script>
+				document.getElementById("divId").innerHTML = "Todo o conteudo da página";
+			</script>
+		</head>
+		<body>
+			<div id="divId" class=".class"></div>
+		</body>
+	</html>
+
+
+
