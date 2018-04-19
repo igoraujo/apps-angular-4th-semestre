@@ -1,0 +1,28 @@
+JAVASCRIPT
+
+Biblioteca v8 interpreta o javascript em C++.
+
+JAVASCRIPT
+1 - fracamente tipada, dinamicamente tipada ou implicitamente tipada.
+2 - linguagem interpretada
+
+Sintaxe de uma Function:
+
+function nomeDaFunccao (a) {
+
+}
+
+Sintaxe de uma Objeto:
+
+let obj = {};
+
+NODE:
+	O node tem o -> No block I/O
+	 >consegue executar as Threads sem que trave as outras Threads, de forma assincrona.
+	
+	Se não tiver muitas dependencias dos dados o NODE é BOM.
+	Se tiver muita dependencia entre os dados o NODE nao é BOM. Pois nao aproveita da melhor forma o assincronismo dele.
+
+	
+
+
